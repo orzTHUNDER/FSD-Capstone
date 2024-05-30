@@ -1,0 +1,122 @@
+[
+
+  {
+    "url": "/authentication/signup",
+    "request_body": "{\"password\": \"password123\", \"email\":\"testuser1@example.com\" }",
+    "expected_status": 200,
+    "expected_response": "Sign-Up Successful!",
+    "method": "POST"
+  },
+  {
+    "url": "/authentication/signup",
+    "request_body": "{\"password\": \"password456\", \"email\":\"testuser2@example.com\" }",
+    "expected_status": 200,
+    "expected_response": "Sign-Up Successful!",
+    "method": "POST"
+  },
+  
+  {
+    "url": "/authentication/signup",
+    "request_body": "{\"password\": \"password123\", \"email\":\"invalid-email\" }",
+    "expected_status": 400,
+    "expected_response": "Invalid email format!",
+    "method": "POST"
+  },
+  {
+    "url": "/authentication/signup",
+    "request_body": "{\"password\": \"password123\", \"email\":\"\" }",
+    "expected_status": 400,
+    "expected_response": "Email cannot be empty!",
+    "method": "POST"
+  },
+  {
+    "url": "/authentication/signup",
+    "request_body": "{\"password\": \"\", \"email\":\"testuser3@example.com\" }",
+    "expected_status": 400,
+    "expected_response": "Password cannot be empty!",
+    "method": "POST"
+  },
+  {
+    "url": "/authentication/signup",
+    "request_body": "{\"password\": \"password123\", \"email\":\"testuser1@example.com\" }",
+    "expected_status": 400,
+    "expected_response": "User with the same email already exists. Please try other emails.",
+    "method": "POST"
+  },
+  {
+    "url": "/authentication/login",
+    "request_body": "{\"password\": \"password123\", \"email\":\"testuser1@example.com\" }",
+    "expected_status": 200,
+    "expected_response": "Login Successful!",
+    "method": "POST"
+  },
+  {
+    "url": "/authentication/login",
+    "request_body": "{\"password\": \"password456\", \"email\":\"testuser2@example.com\" }",
+    "expected_status": 200,
+    "expected_response": "Login Successful!",
+    "method": "POST"
+  },
+  {
+    "url": "/authentication/login",
+    "request_body": "{\"password\": \"password123\", \"email\":\"invalid-email\" }",
+    "expected_status": 400,
+    "expected_response": "Invalid email format!",
+    "method": "POST"
+  },
+  {
+    "url": "/authentication/login",
+    "request_body": "{\"password\": \"password123\", \"email\":\"\" }",
+    "expected_status": 400,
+    "expected_response": "Email cannot be empty!",
+    "method": "POST"
+  },
+  {
+    "url": "/authentication/login",
+    "request_body": "{\"password\": \"\", \"email\":\"testuser3@example.com\" }",
+    "expected_status": 400,
+    "expected_response": "Password cannot be empty!",
+    "method": "POST"
+  },
+  {
+    "url": "/authentication/login",
+    "request_body": "{\"password\": \"wrongpassword\", \"email\":\"testuser1@example.com\" }",
+    "expected_status": 400,
+    "expected_response": "Invalid Credentials!",
+    "method": "POST"
+  }, 
+
+
+
+
+    
+  {
+      "url": "/rateservice/rate/USD/EUR",
+      "expected_status": 200,
+      "expected_response": "0.92",
+      "method":"GET"
+    },
+    {
+      "url": "/rateservice/rate/INVALID/EUR",
+      "expected_status": 400,
+      "expected_response": "Invalid Currency!",
+      "method":"GET"
+    },
+
+
+
+    {
+      "url": "/conversion/convert/USD/EUR/2",
+      "expected_status": 200,
+      "expected_response": "1.84",
+      "method":"GET"
+    }, 
+
+    {
+      "url": "/conversion/convert/USD/EUR/-1",
+      "expected_status": 400,
+      "expected_response": "Amount cannot be negative!",
+      "method":"GET"
+    }
+
+  ]

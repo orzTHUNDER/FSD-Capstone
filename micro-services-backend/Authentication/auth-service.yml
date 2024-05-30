@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-docker-auth
+spec:
+  selector:
+    app: spring-docker-auth
+  ports:
+    - protocol: TCP
+      port: 8082
+      targetPort: 8082

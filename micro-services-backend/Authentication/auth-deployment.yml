@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-docker-auth
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-docker-auth
+  template:
+    metadata:
+      labels:
+        app: spring-docker-auth
+    spec:
+      containers:
+      - name: spring-docker-auth
+        image: spring-docker-auth:latest
+        ports:
+        - containerPort: 8082
+        env:
+        - name: SPRING_DATASOURCE_URL
+          value: jdbc:mysql://mysql:3306/mydatabase
+        - name: SPRING_DATASOURCE_USERNAME
+          value: myuser
+        - name: SPRING_DATASOURCE_PASSWORD
+          value: mypassword

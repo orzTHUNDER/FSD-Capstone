@@ -1,0 +1,984 @@
+15:49:58.433 [main] INFO  F.A.DynamicIntegrationTestSuite - Starting DynamicIntegrationTestSuite using Java 21.0.3 with PID 30604 (started by n.rajasekaran in C:\Users\n.rajasekaran\Downloads\APIGateway)
+15:49:58.433 [main] INFO  F.A.DynamicIntegrationTestSuite - Starting DynamicIntegrationTestSuite using Java 21.0.3 with PID 30604 (started by n.rajasekaran in C:\Users\n.rajasekaran\Downloads\APIGateway)
+15:49:58.438 [main] DEBUG F.A.DynamicIntegrationTestSuite - Running with Spring Boot v3.2.5, Spring v6.1.6
+15:49:58.438 [main] DEBUG F.A.DynamicIntegrationTestSuite - Running with Spring Boot v3.2.5, Spring v6.1.6
+15:49:58.440 [main] INFO  F.A.DynamicIntegrationTestSuite - No active profile set, falling back to 1 default profile: "default"
+15:49:58.440 [main] INFO  F.A.DynamicIntegrationTestSuite - No active profile set, falling back to 1 default profile: "default"
+15:50:05.174 [main] INFO  F.A.DynamicIntegrationTestSuite - Started DynamicIntegrationTestSuite in 7.331 seconds (process running for 10.317)
+15:50:05.174 [main] INFO  F.A.DynamicIntegrationTestSuite - Started DynamicIntegrationTestSuite in 7.331 seconds (process running for 10.317)
+15:50:06.594 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:50:06.594 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Sign-Up Successful!
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Sign-Up Successful!
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Sign-Up Successful!
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Sign-Up Successful!
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid email format!
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid email format!
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Email cannot be empty!
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Email cannot be empty!
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.596 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Password cannot be empty!
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Password cannot be empty!
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: User with the same email already exists. Please try other emails.
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: User with the same email already exists. Please try other emails.
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Login Successful!
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Login Successful!
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Login Successful!
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Login Successful!
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid email format!
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid email format!
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Email cannot be empty!
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Email cannot be empty!
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:50:06.597 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Password cannot be empty!
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Password cannot be empty!
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "wrongpassword", "email":"testuser1@example.com" }
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "wrongpassword", "email":"testuser1@example.com" }
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid Credentials!
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid Credentials!
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /rateservice/rate/USD/EUR
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /rateservice/rate/USD/EUR
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: 0.92
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: 0.92
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /rateservice/rate/INVALID/EUR
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /rateservice/rate/INVALID/EUR
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid Currency!
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid Currency!
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /conversion/convert/USD/EUR/2
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /conversion/convert/USD/EUR/2
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: 1.84
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: 1.84
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /conversion/convert/USD/EUR/-1
+15:50:06.598 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /conversion/convert/USD/EUR/-1
+15:50:06.599 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:06.599 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:06.599 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.599 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:50:06.599 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Amount cannot be negative!
+15:50:06.599 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Amount cannot be negative!
+15:50:07.313 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:50:07.313 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:50:07.314 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:50:07.314 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:50:07.314 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:50:07.314 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:50:07.314 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Sign-Up Successful!
+15:50:07.314 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Sign-Up Successful!
+15:50:07.314 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.314 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.315 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: User with the same email already exists. Please try other emails.
+15:50:07.315 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: User with the same email already exists. Please try other emails.
+15:50:07.362 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:50:07.362 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:50:07.363 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:50:07.363 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:50:07.363 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:50:07.363 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:50:07.363 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Sign-Up Successful!
+15:50:07.363 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Sign-Up Successful!
+15:50:07.363 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.363 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.363 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: User with the same email already exists. Please try other emails.
+15:50:07.363 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: User with the same email already exists. Please try other emails.
+15:50:07.389 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:50:07.389 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:50:07.389 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:50:07.389 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:50:07.389 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.389 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.389 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid email format!
+15:50:07.389 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid email format!
+15:50:07.389 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.389 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.389 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid email format!
+15:50:07.389 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid email format!
+15:50:07.411 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:50:07.411 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:50:07.411 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:50:07.411 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:50:07.411 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.411 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.411 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Email cannot be empty!
+15:50:07.411 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Email cannot be empty!
+15:50:07.411 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.411 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.411 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Email cannot be empty!
+15:50:07.411 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Email cannot be empty!
+15:50:07.433 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:50:07.433 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:50:07.433 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:50:07.433 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:50:07.434 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.434 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.434 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Password cannot be empty!
+15:50:07.434 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Password cannot be empty!
+15:50:07.434 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.434 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.434 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Password cannot be empty!
+15:50:07.434 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Password cannot be empty!
+15:50:07.465 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:50:07.465 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:50:07.465 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:50:07.465 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:50:07.465 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.465 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.466 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: User with the same email already exists. Please try other emails.
+15:50:07.466 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: User with the same email already exists. Please try other emails.
+15:50:07.466 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.466 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.466 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: User with the same email already exists. Please try other emails.
+15:50:07.466 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: User with the same email already exists. Please try other emails.
+15:50:07.496 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:50:07.496 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:50:07.497 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:50:07.497 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:50:07.497 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:50:07.497 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:50:07.497 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Login Successful!
+15:50:07.497 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Login Successful!
+15:50:07.497 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:50:07.497 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:50:07.497 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Login Successful!
+15:50:07.497 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Login Successful!
+15:50:07.521 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:50:07.521 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:50:07.521 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:50:07.521 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:50:07.521 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:50:07.521 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:50:07.521 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Login Successful!
+15:50:07.521 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Login Successful!
+15:50:07.521 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:50:07.521 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:50:07.521 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Login Successful!
+15:50:07.521 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Login Successful!
+15:50:07.535 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:50:07.535 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:50:07.536 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:50:07.536 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:50:07.536 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.536 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.536 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid email format!
+15:50:07.536 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid email format!
+15:50:07.537 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.537 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.537 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid email format!
+15:50:07.537 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid email format!
+15:50:07.562 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:50:07.562 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:50:07.563 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:50:07.563 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:50:07.563 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.563 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.563 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Email cannot be empty!
+15:50:07.563 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Email cannot be empty!
+15:50:07.563 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.563 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.563 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Email cannot be empty!
+15:50:07.563 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Email cannot be empty!
+15:50:07.588 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:50:07.588 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:50:07.589 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:50:07.589 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:50:07.589 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.589 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.589 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Password cannot be empty!
+15:50:07.589 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Password cannot be empty!
+15:50:07.589 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.589 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.590 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Password cannot be empty!
+15:50:07.590 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Password cannot be empty!
+15:50:07.641 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:50:07.641 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:50:07.642 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "wrongpassword", "email":"testuser1@example.com" }
+15:50:07.642 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "wrongpassword", "email":"testuser1@example.com" }
+15:50:07.642 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.642 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.642 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid Credentials!
+15:50:07.642 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid Credentials!
+15:50:07.642 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.642 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.642 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid Credentials!
+15:50:07.642 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid Credentials!
+15:50:07.798 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /rateservice/rate/USD/EUR
+15:50:07.798 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /rateservice/rate/USD/EUR
+15:50:07.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:07.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:07.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:50:07.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:50:07.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: 0.92
+15:50:07.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: 0.92
+15:50:07.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:50:07.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:50:07.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: 0.92
+15:50:07.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: 0.92
+15:50:07.825 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /rateservice/rate/INVALID/EUR
+15:50:07.825 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /rateservice/rate/INVALID/EUR
+15:50:07.825 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:07.825 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:07.825 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.825 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.825 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid Currency!
+15:50:07.825 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid Currency!
+15:50:07.826 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.826 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.826 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid Currency!
+15:50:07.826 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid Currency!
+15:50:07.960 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /conversion/convert/USD/EUR/2
+15:50:07.960 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /conversion/convert/USD/EUR/2
+15:50:07.960 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:07.960 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:07.960 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:50:07.960 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:50:07.960 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: 1.84
+15:50:07.960 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: 1.84
+15:50:07.960 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:50:07.960 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:50:07.960 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: 1.84
+15:50:07.960 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: 1.84
+15:50:07.982 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /conversion/convert/USD/EUR/-1
+15:50:07.982 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /conversion/convert/USD/EUR/-1
+15:50:07.983 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:07.983 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:50:07.983 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.983 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:50:07.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Amount cannot be negative!
+15:50:07.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Amount cannot be negative!
+15:50:07.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:50:07.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Amount cannot be negative!
+15:50:07.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Amount cannot be negative!
+15:52:53.789 [main] INFO  F.A.DynamicIntegrationTestSuite - Starting DynamicIntegrationTestSuite using Java 21.0.3 with PID 29276 (started by n.rajasekaran in C:\Users\n.rajasekaran\Downloads\APIGateway)
+15:52:53.789 [main] INFO  F.A.DynamicIntegrationTestSuite - Starting DynamicIntegrationTestSuite using Java 21.0.3 with PID 29276 (started by n.rajasekaran in C:\Users\n.rajasekaran\Downloads\APIGateway)
+15:52:53.792 [main] DEBUG F.A.DynamicIntegrationTestSuite - Running with Spring Boot v3.2.5, Spring v6.1.6
+15:52:53.792 [main] DEBUG F.A.DynamicIntegrationTestSuite - Running with Spring Boot v3.2.5, Spring v6.1.6
+15:52:53.794 [main] INFO  F.A.DynamicIntegrationTestSuite - No active profile set, falling back to 1 default profile: "default"
+15:52:53.794 [main] INFO  F.A.DynamicIntegrationTestSuite - No active profile set, falling back to 1 default profile: "default"
+15:53:02.874 [main] INFO  F.A.DynamicIntegrationTestSuite - Started DynamicIntegrationTestSuite in 9.882 seconds (process running for 15.197)
+15:53:02.874 [main] INFO  F.A.DynamicIntegrationTestSuite - Started DynamicIntegrationTestSuite in 9.882 seconds (process running for 15.197)
+15:53:05.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:53:05.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:53:05.808 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:53:05.808 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:53:05.808 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:53:05.808 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:53:05.808 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Sign-Up Successful!
+15:53:05.808 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Sign-Up Successful!
+15:53:05.808 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:53:05.808 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:53:05.808 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:53:05.808 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:53:05.808 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:53:05.808 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Sign-Up Successful!
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Sign-Up Successful!
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid email format!
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid email format!
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Email cannot be empty!
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Email cannot be empty!
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Password cannot be empty!
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Password cannot be empty!
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:53:05.809 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: User with the same email already exists. Please try other emails.
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: User with the same email already exists. Please try other emails.
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Login Successful!
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Login Successful!
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Login Successful!
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Login Successful!
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid email format!
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid email format!
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:53:05.810 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Email cannot be empty!
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Email cannot be empty!
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Password cannot be empty!
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Password cannot be empty!
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "wrongpassword", "email":"testuser1@example.com" }
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "wrongpassword", "email":"testuser1@example.com" }
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid Credentials!
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid Credentials!
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /rateservice/rate/USD/EUR
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /rateservice/rate/USD/EUR
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: 0.92
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: 0.92
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /rateservice/rate/INVALID/EUR
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /rateservice/rate/INVALID/EUR
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:05.811 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid Currency!
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid Currency!
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /conversion/convert/USD/EUR/2
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /conversion/convert/USD/EUR/2
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: 1.84
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: 1.84
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /conversion/convert/USD/EUR/-1
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /conversion/convert/USD/EUR/-1
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Amount cannot be negative!
+15:53:05.812 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Amount cannot be negative!
+15:53:06.802 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:53:06.802 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:53:06.802 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:53:06.802 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:53:06.803 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:53:06.803 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:53:06.803 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Sign-Up Successful!
+15:53:06.803 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Sign-Up Successful!
+15:53:06.803 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:06.803 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:06.803 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: User with the same email already exists. Please try other emails.
+15:53:06.803 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: User with the same email already exists. Please try other emails.
+15:53:06.861 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:53:06.861 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:53:06.862 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:53:06.862 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:53:06.862 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:53:06.862 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:53:06.862 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Sign-Up Successful!
+15:53:06.862 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Sign-Up Successful!
+15:53:06.862 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:06.862 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:06.862 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: User with the same email already exists. Please try other emails.
+15:53:06.862 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: User with the same email already exists. Please try other emails.
+15:53:06.890 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:53:06.890 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:53:06.890 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:53:06.890 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:53:06.890 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:06.890 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:06.890 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid email format!
+15:53:06.890 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid email format!
+15:53:06.890 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:06.890 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:06.891 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid email format!
+15:53:06.891 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid email format!
+15:53:06.924 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:53:06.924 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:53:06.924 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:53:06.924 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:53:06.924 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:06.924 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:06.924 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Email cannot be empty!
+15:53:06.924 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Email cannot be empty!
+15:53:06.924 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:06.924 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:06.924 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Email cannot be empty!
+15:53:06.924 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Email cannot be empty!
+15:53:06.948 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:53:06.948 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:53:06.948 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:53:06.948 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:53:06.948 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:06.948 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:06.948 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Password cannot be empty!
+15:53:06.948 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Password cannot be empty!
+15:53:06.948 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:06.948 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:06.948 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Password cannot be empty!
+15:53:06.948 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Password cannot be empty!
+15:53:06.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:53:06.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+15:53:06.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:53:06.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:53:06.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:06.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:06.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: User with the same email already exists. Please try other emails.
+15:53:06.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: User with the same email already exists. Please try other emails.
+15:53:06.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:06.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:06.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: User with the same email already exists. Please try other emails.
+15:53:06.984 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: User with the same email already exists. Please try other emails.
+15:53:07.040 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:53:07.040 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:53:07.040 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:53:07.040 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+15:53:07.041 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:53:07.041 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:53:07.041 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Login Successful!
+15:53:07.041 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Login Successful!
+15:53:07.041 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:53:07.041 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:53:07.041 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Login Successful!
+15:53:07.041 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Login Successful!
+15:53:07.080 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:53:07.080 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:53:07.080 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:53:07.080 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+15:53:07.080 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:53:07.080 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:53:07.080 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Login Successful!
+15:53:07.080 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Login Successful!
+15:53:07.080 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:53:07.080 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:53:07.080 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Login Successful!
+15:53:07.080 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Login Successful!
+15:53:07.110 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:53:07.110 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:53:07.111 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:53:07.111 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+15:53:07.111 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:07.111 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:07.111 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid email format!
+15:53:07.111 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid email format!
+15:53:07.111 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:07.111 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:07.111 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid email format!
+15:53:07.111 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid email format!
+15:53:07.142 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:53:07.142 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:53:07.143 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:53:07.143 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+15:53:07.143 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:07.143 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:07.143 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Email cannot be empty!
+15:53:07.143 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Email cannot be empty!
+15:53:07.143 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:07.143 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:07.144 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Email cannot be empty!
+15:53:07.144 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Email cannot be empty!
+15:53:07.172 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:53:07.172 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:53:07.174 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:53:07.174 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+15:53:07.174 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:07.174 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:07.174 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Password cannot be empty!
+15:53:07.174 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Password cannot be empty!
+15:53:07.174 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:07.174 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:07.174 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Password cannot be empty!
+15:53:07.174 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Password cannot be empty!
+15:53:07.217 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:53:07.217 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+15:53:07.218 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "wrongpassword", "email":"testuser1@example.com" }
+15:53:07.218 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "wrongpassword", "email":"testuser1@example.com" }
+15:53:07.218 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:07.218 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:07.218 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid Credentials!
+15:53:07.218 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid Credentials!
+15:53:07.218 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:07.218 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:07.218 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid Credentials!
+15:53:07.218 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid Credentials!
+15:53:07.366 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /rateservice/rate/USD/EUR
+15:53:07.366 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /rateservice/rate/USD/EUR
+15:53:07.367 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:07.367 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:07.367 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:53:07.367 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:53:07.367 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: 0.92
+15:53:07.367 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: 0.92
+15:53:07.367 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:53:07.367 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:53:07.367 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: 0.92
+15:53:07.367 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: 0.92
+15:53:07.393 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /rateservice/rate/INVALID/EUR
+15:53:07.393 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /rateservice/rate/INVALID/EUR
+15:53:07.394 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:07.394 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:07.394 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:07.394 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:07.394 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid Currency!
+15:53:07.394 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid Currency!
+15:53:07.394 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:07.394 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:07.394 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid Currency!
+15:53:07.394 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid Currency!
+15:53:07.532 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /conversion/convert/USD/EUR/2
+15:53:07.532 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /conversion/convert/USD/EUR/2
+15:53:07.532 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:07.532 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:07.532 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:53:07.532 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+15:53:07.533 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: 1.84
+15:53:07.533 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: 1.84
+15:53:07.533 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:53:07.533 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+15:53:07.533 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: 1.84
+15:53:07.533 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: 1.84
+15:53:07.559 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /conversion/convert/USD/EUR/-1
+15:53:07.559 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /conversion/convert/USD/EUR/-1
+15:53:07.559 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:07.559 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+15:53:07.559 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:07.559 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+15:53:07.560 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Amount cannot be negative!
+15:53:07.560 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Amount cannot be negative!
+15:53:07.560 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:07.560 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+15:53:07.560 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Amount cannot be negative!
+15:53:07.560 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Amount cannot be negative!
+17:04:14.821 [main] INFO  F.A.DynamicIntegrationTestSuite - Starting DynamicIntegrationTestSuite using Java 21.0.3 with PID 39696 (started by n.rajasekaran in C:\Users\n.rajasekaran\Downloads\APIGateway)
+17:04:14.821 [main] INFO  F.A.DynamicIntegrationTestSuite - Starting DynamicIntegrationTestSuite using Java 21.0.3 with PID 39696 (started by n.rajasekaran in C:\Users\n.rajasekaran\Downloads\APIGateway)
+17:04:14.827 [main] DEBUG F.A.DynamicIntegrationTestSuite - Running with Spring Boot v3.2.5, Spring v6.1.6
+17:04:14.827 [main] DEBUG F.A.DynamicIntegrationTestSuite - Running with Spring Boot v3.2.5, Spring v6.1.6
+17:04:14.828 [main] INFO  F.A.DynamicIntegrationTestSuite - No active profile set, falling back to 1 default profile: "default"
+17:04:14.828 [main] INFO  F.A.DynamicIntegrationTestSuite - No active profile set, falling back to 1 default profile: "default"
+17:04:25.446 [main] INFO  F.A.DynamicIntegrationTestSuite - Started DynamicIntegrationTestSuite in 11.578 seconds (process running for 16.478)
+17:04:25.446 [main] INFO  F.A.DynamicIntegrationTestSuite - Started DynamicIntegrationTestSuite in 11.578 seconds (process running for 16.478)
+17:04:28.792 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+17:04:28.792 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+17:04:28.796 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+17:04:28.796 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+17:04:28.796 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+17:04:28.796 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+17:04:28.796 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Sign-Up Successful!
+17:04:28.796 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Sign-Up Successful!
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Sign-Up Successful!
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Sign-Up Successful!
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid email format!
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid email format!
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+17:04:28.797 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+17:04:28.798 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+17:04:28.798 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+17:04:28.798 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.798 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.798 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Email cannot be empty!
+17:04:28.798 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Email cannot be empty!
+17:04:28.798 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+17:04:28.798 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+17:04:28.798 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+17:04:28.798 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Password cannot be empty!
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Password cannot be empty!
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/signup
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: User with the same email already exists. Please try other emails.
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: User with the same email already exists. Please try other emails.
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+17:04:28.799 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+17:04:28.800 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+17:04:28.800 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+17:04:28.800 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Login Successful!
+17:04:28.800 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Login Successful!
+17:04:28.800 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+17:04:28.800 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+17:04:28.800 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+17:04:28.800 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+17:04:28.800 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+17:04:28.800 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+17:04:28.800 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Login Successful!
+17:04:28.800 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Login Successful!
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid email format!
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid email format!
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Email cannot be empty!
+17:04:28.801 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Email cannot be empty!
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Password cannot be empty!
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Password cannot be empty!
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /authentication/login
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "wrongpassword", "email":"testuser1@example.com" }
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: {"password": "wrongpassword", "email":"testuser1@example.com" }
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid Credentials!
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid Credentials!
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /rateservice/rate/USD/EUR
+17:04:28.802 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /rateservice/rate/USD/EUR
+17:04:28.803 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:28.803 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:28.803 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+17:04:28.803 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+17:04:28.803 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: 0.92
+17:04:28.803 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: 0.92
+17:04:28.803 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /rateservice/rate/INVALID/EUR
+17:04:28.803 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /rateservice/rate/INVALID/EUR
+17:04:28.803 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:28.803 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:28.803 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.803 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid Currency!
+17:04:28.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Invalid Currency!
+17:04:28.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /conversion/convert/USD/EUR/2
+17:04:28.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /conversion/convert/USD/EUR/2
+17:04:28.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:28.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:28.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+17:04:28.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 200
+17:04:28.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: 1.84
+17:04:28.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: 1.84
+17:04:28.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /conversion/convert/USD/EUR/-1
+17:04:28.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Testing URL: /conversion/convert/USD/EUR/-1
+17:04:28.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:28.804 [main] INFO  F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:28.805 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.805 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Status: 400
+17:04:28.805 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Amount cannot be negative!
+17:04:28.805 [main] INFO  F.A.DynamicIntegrationTestSuite - Response Body: Amount cannot be negative!
+17:04:30.486 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+17:04:30.486 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+17:04:30.487 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+17:04:30.487 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+17:04:30.487 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+17:04:30.487 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+17:04:30.487 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Sign-Up Successful!
+17:04:30.487 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Sign-Up Successful!
+17:04:30.487 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+17:04:30.487 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+17:04:30.488 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Sign-Up Successful!
+17:04:30.488 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Sign-Up Successful!
+17:04:30.547 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+17:04:30.547 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+17:04:30.547 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+17:04:30.547 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+17:04:30.547 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+17:04:30.547 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+17:04:30.548 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Sign-Up Successful!
+17:04:30.548 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Sign-Up Successful!
+17:04:30.548 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+17:04:30.548 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+17:04:30.548 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Sign-Up Successful!
+17:04:30.548 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Sign-Up Successful!
+17:04:30.574 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+17:04:30.574 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+17:04:30.574 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+17:04:30.574 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+17:04:30.575 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.575 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.575 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid email format!
+17:04:30.575 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid email format!
+17:04:30.575 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.575 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.575 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid email format!
+17:04:30.575 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid email format!
+17:04:30.602 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+17:04:30.602 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+17:04:30.602 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+17:04:30.602 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+17:04:30.602 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.602 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.602 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Email cannot be empty!
+17:04:30.602 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Email cannot be empty!
+17:04:30.602 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.602 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.603 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Email cannot be empty!
+17:04:30.603 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Email cannot be empty!
+17:04:30.633 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+17:04:30.633 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+17:04:30.633 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+17:04:30.633 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+17:04:30.633 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.633 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.634 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Password cannot be empty!
+17:04:30.634 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Password cannot be empty!
+17:04:30.634 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.634 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.634 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Password cannot be empty!
+17:04:30.634 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Password cannot be empty!
+17:04:30.668 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+17:04:30.668 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/signup
+17:04:30.668 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+17:04:30.668 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+17:04:30.668 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.668 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.668 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: User with the same email already exists. Please try other emails.
+17:04:30.668 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: User with the same email already exists. Please try other emails.
+17:04:30.669 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.669 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.669 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: User with the same email already exists. Please try other emails.
+17:04:30.669 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: User with the same email already exists. Please try other emails.
+17:04:30.711 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+17:04:30.711 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+17:04:30.711 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+17:04:30.711 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"testuser1@example.com" }
+17:04:30.711 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+17:04:30.711 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+17:04:30.711 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Login Successful!
+17:04:30.711 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Login Successful!
+17:04:30.711 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+17:04:30.711 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+17:04:30.711 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Login Successful!
+17:04:30.711 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Login Successful!
+17:04:30.745 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+17:04:30.745 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+17:04:30.746 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+17:04:30.746 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password456", "email":"testuser2@example.com" }
+17:04:30.746 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+17:04:30.746 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+17:04:30.746 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Login Successful!
+17:04:30.746 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Login Successful!
+17:04:30.746 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+17:04:30.746 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+17:04:30.746 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Login Successful!
+17:04:30.746 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Login Successful!
+17:04:30.769 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+17:04:30.769 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+17:04:30.770 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+17:04:30.770 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"invalid-email" }
+17:04:30.770 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.770 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.770 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid email format!
+17:04:30.770 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid email format!
+17:04:30.771 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.771 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.771 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid email format!
+17:04:30.771 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid email format!
+17:04:30.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+17:04:30.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+17:04:30.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+17:04:30.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "password123", "email":"" }
+17:04:30.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Email cannot be empty!
+17:04:30.799 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Email cannot be empty!
+17:04:30.800 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.800 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.800 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Email cannot be empty!
+17:04:30.800 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Email cannot be empty!
+17:04:30.825 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+17:04:30.825 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+17:04:30.826 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+17:04:30.826 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "", "email":"testuser3@example.com" }
+17:04:30.826 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.826 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.826 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Password cannot be empty!
+17:04:30.826 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Password cannot be empty!
+17:04:30.826 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.826 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.827 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Password cannot be empty!
+17:04:30.827 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Password cannot be empty!
+17:04:30.869 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+17:04:30.869 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /authentication/login
+17:04:30.869 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "wrongpassword", "email":"testuser1@example.com" }
+17:04:30.869 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: {"password": "wrongpassword", "email":"testuser1@example.com" }
+17:04:30.869 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.869 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:30.869 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid Credentials!
+17:04:30.869 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid Credentials!
+17:04:30.869 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.869 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:30.870 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid Credentials!
+17:04:30.870 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid Credentials!
+17:04:30.993 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /rateservice/rate/USD/EUR
+17:04:30.993 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /rateservice/rate/USD/EUR
+17:04:30.994 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:30.994 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:30.994 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+17:04:30.994 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+17:04:30.994 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: 0.92
+17:04:30.994 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: 0.92
+17:04:30.994 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+17:04:30.994 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+17:04:30.994 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: 0.92
+17:04:30.994 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: 0.92
+17:04:31.017 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /rateservice/rate/INVALID/EUR
+17:04:31.017 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /rateservice/rate/INVALID/EUR
+17:04:31.017 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:31.017 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:31.017 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:31.017 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:31.017 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid Currency!
+17:04:31.017 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Invalid Currency!
+17:04:31.017 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:31.017 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:31.018 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid Currency!
+17:04:31.018 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Invalid Currency!
+17:04:31.191 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /conversion/convert/USD/EUR/2
+17:04:31.191 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /conversion/convert/USD/EUR/2
+17:04:31.192 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:31.192 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:31.192 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+17:04:31.192 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 200
+17:04:31.192 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: 1.84
+17:04:31.192 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: 1.84
+17:04:31.192 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+17:04:31.192 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 200
+17:04:31.192 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: 1.84
+17:04:31.192 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: 1.84
+17:04:31.238 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /conversion/convert/USD/EUR/-1
+17:04:31.238 [main] DEBUG F.A.DynamicIntegrationTestSuite - Test Case: /conversion/convert/USD/EUR/-1
+17:04:31.239 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:31.239 [main] DEBUG F.A.DynamicIntegrationTestSuite - Request Body: null
+17:04:31.239 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:31.239 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Status: 400
+17:04:31.239 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Amount cannot be negative!
+17:04:31.239 [main] DEBUG F.A.DynamicIntegrationTestSuite - Expected Response: Amount cannot be negative!
+17:04:31.240 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:31.240 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Status: 400
+17:04:31.240 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Amount cannot be negative!
+17:04:31.240 [main] DEBUG F.A.DynamicIntegrationTestSuite - Actual Response Body: Amount cannot be negative!
