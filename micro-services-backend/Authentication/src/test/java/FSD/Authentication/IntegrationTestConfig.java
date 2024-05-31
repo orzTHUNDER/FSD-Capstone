@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@ActiveProfiles("test")
+// @ActiveProfiles("test")
 public class IntegrationTestConfig {
     // Add any additional configurations here
 }
