@@ -35,9 +35,6 @@ This project solely focuses on the creation of dynamic and configurable integrat
 
 ![Loading TC's](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/Loading-test-data.png)
 
-##### Loading the test cases from the External Source
-
-![Loading TC's](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/Loading-test-data.png)
 
 ##### Using Test-Factory to dynamic testing that are generated at run-time
 
