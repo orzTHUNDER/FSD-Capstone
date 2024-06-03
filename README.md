@@ -27,20 +27,40 @@ This project solely focuses on the creation of dynamic and configurable integrat
 
 ## Screenshots
 
-![Test-Container](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/Test-Container.png)
+![Test-Container](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/Test-Container.png)
 
-![External test logging](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/External-test-log.png)
+![External test logging](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/External-test-log.png)
 
-![External test case soruce](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/External-test-scripts.png)
+![External test case soruce](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/External-test-scripts.png)
 
-![Test case results](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/Test-case-results.png)
+![Test case results](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/Test-case-results.png)
 
-![Docker images](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/Containerizing.png)
+![Docker images](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/Docker%20Images.png)
 
 
-![Sample UI](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/Sample-UI.png)
+![Sample UI](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/Sample-UI.png)
 
-![Eureka Server](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/Eureka-Server.png)
+![Eureka Server without kubernetes](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/Eureka-Server.png)
+
+![Eureka Server with kubernetes](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/ServiceRegistry-Minikube.png)
+
+![DockerFile](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/DockerFile.png)
+
+![Starting Minikube](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/Starting-minikube.png)
+
+![Minikube clusters](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/Minikube-Clusters.png)
+
+![Running a Service in the cluster](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/Running%20Service.png)
+
+![Demo of the running service](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/ServiceRegistry-Minikube.png)
+
+![MySQL in Kubernetes](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/Contanerized-MySQL.png)
+
+![Mounting the MySQL](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/Mounting-Deployed-Mysql-Auth-Service.png)
+
+![Accessing the Mysql in Kuberenetes - 1](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/Accessing-MySQL-kubernetes-1.png)
+
+![Accessing the Mysql in Kuberenetes - 2](https://github.com/orzTHUNDER/FSD-Capstone/blob/master/ScreenShots/Accessing-MySQL-kubernetes-2.png)
 
 
 
