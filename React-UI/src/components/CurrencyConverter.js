@@ -33,8 +33,12 @@ const CurrencyConverter = () => {
     //   console.error('Error converting currency:', error);
     // }
 
+
+    //http://localhost:8765/conversion/convert/${fromCurrency.value}/${toCurrency.value}/${amount}
+
+
     try {
-        const response = await fetch(`http://localhost:8765/conversion/convert/${fromCurrency.value}/${toCurrency.value}/${amount}`);
+        const response = await fetch(`http://127.0.0.1:52130/conversion/convert/${fromCurrency.value}/${toCurrency.value}/${amount}`);
         const data = await response.json();
         console.log(data);
         

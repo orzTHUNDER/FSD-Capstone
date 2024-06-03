@@ -1,7 +1,7 @@
 
 # Dynamic Integration Test Suite
 
-This project solely focuses on the creation of dynamic and configurable integration test cases.
+This project solely focuses on the creation of dynamic and configurable integration test cases. Deployed in a single node Kubernetes cluster ( Minikube ) locally. Docker for shipping the application in containers.
 
 
 
@@ -11,6 +11,7 @@ This project solely focuses on the creation of dynamic and configurable integrat
 - Micro-services Architecture
 - Configurable test cases using TEST-FACTORY
 - Dynamic test cases using TEST-CONTAINER and External test case file created in run-time
+- Deployed in minikube with docker as the run-time.
 - Mimics actual production test with full integration test for all services
 
 
@@ -20,6 +21,8 @@ This project solely focuses on the creation of dynamic and configurable integrat
 - JAVA Spring Boot
 - MySQL
 - Docker
+- Minikube
+- Kubectl
 
 
 ## Screenshots
@@ -79,5 +82,99 @@ Test Factory helps in creation of test-suite (Collection of test-cases) which is
     - Uses FEIGN for simplifying the process of calling remote services (RATE <---> CONVERSION). Instead of Rest-template to remove the overhead of mentioning the URL and port correctly.
 
 
+## Deployment
 
+- All the micro-services has a docker-file. which is used for creating docker images.
+- The docker image contains the JAR file of the JAVA Micro-Service.
+- A YAML file is created for Kubernetes Deployment and Service. Which contains the docker image, number of replicas, port and container port and etc..
+- Using Kubectl ( CLI for configuration of the clusters ) for applying the YAML file to create a service in Minikube.
+- Using Minikube we can start the service with the service name which will then tunnel a connection for accessing the service.
+
+
+
+### Building the docker file
+
+This build a docker image with the name auth 
+
+```bash
+  docker build -t spring-docker-auth .
+```
+
+### Starting the minikube
+
+```bash
+  minikube start
+```
+
+### Creating a Deployment and Service YAML file
+
+
+##### Deployment.yaml
+
+```bash
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-docker-auth
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-docker-auth
+  template:
+    metadata:
+      labels:
+        app: spring-docker-auth
+    spec:
+      containers:
+      - name: spring-docker-auth
+        image: spring-docker-auth
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8082
+        env:
+        - name: SPRING_DATASOURCE_URL
+          value: jdbc:mysql://mysql:3306/mydatabase
+        - name: SPRING_DATASOURCE_USERNAME
+          value: myuser
+        - name: SPRING_DATASOURCE_PASSWORD
+          value: mypassword
+        - name: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
+          value: http://spring-docker-serviceregistry:8761/eureka/
+        - name: SPRING_APPLICATION_NAME
+          value: Authentication
+        - name: SERVER_PORT
+          value: "8082"
+
+```
+
+Service.yaml
+
+```bash
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-docker-auth
+spec:
+  selector:
+    app: spring-docker-auth
+  ports:
+    - protocol: TCP
+      port: 8082
+      targetPort: 8082
+  type: NodePort
+```
+
+### Deploying the yaml files to kubernetes cluster using kubectl
+
+```bash
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+```
+
+### Accessing the app in the cluster
+
+```bash
+  minikube service spring-docker-auth --url
+```
 

@@ -90,8 +90,9 @@ const SignUp = () => {
       return;
     }
 
+    //http://localhost:8765/authentication/signup
     try {
-      const response = await axios.post('http://localhost:8765/authentication/signup', {
+      const response = await axios.post('http://127.0.0.1:52130/authentication/signup', {
         email,
         password,
       }

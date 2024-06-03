@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: spring-docker-auth
-        image: spring-docker-auth:latest
+        image: spring-docker-auth
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8082
         env:
@@ -24,3 +25,9 @@ spec:
           value: myuser
         - name: SPRING_DATASOURCE_PASSWORD
           value: mypassword
+        - name: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
+          value: http://spring-docker-serviceregistry:8761/eureka/
+        - name: SPRING_APPLICATION_NAME
+          value: Authentication
+        - name: SERVER_PORT
+          value: "8082"

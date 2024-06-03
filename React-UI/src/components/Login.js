@@ -89,9 +89,9 @@ const Login = () => {
       setOpen(true);
       return;
     }
-
+    //http://localhost:8765/authentication/login
     try {
-      const response = await axios.post('http://localhost:8765/authentication/login', {
+      const response = await axios.post('http://127.0.0.1:52130/authentication/login', {
         email,
         password,
       }

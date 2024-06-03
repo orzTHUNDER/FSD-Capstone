@@ -88,4 +88,4 @@ spec:
   - protocol: TCP
     port: 8765  # External port for communication (adjust if needed)
     targetPort: 8765  # Internal container port
-  type: LoadBalancer
+  type: NodePort
